@@ -16,9 +16,11 @@ public class Main {
 //        top = stack.peek();
 //        System.out.println(top);
 
-        String str = "abcd";
-        StringReverser reverser = new StringReverser();
-        var result = reverser.reverse(str);
-        System.out.println(result);
+//        String str = "abcd";
+//        StringReverser reverser = new StringReverser();
+//        var result = reverser.reverse(str);
+//        System.out.println(result);
+
+
     }
 }

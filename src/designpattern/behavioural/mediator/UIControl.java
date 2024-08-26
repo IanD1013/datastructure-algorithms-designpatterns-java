@@ -1,9 +1,17 @@
 package designpattern.behavioural.mediator;
 
-public class UIControl {
-    protected DialogBox owner; // every UI control has its owner
+import java.util.ArrayList;
+import java.util.List;
 
-    public UIControl(DialogBox owner) {
-        this.owner = owner;
+public abstract class UIControl {
+    private List<EventHandler> eventHandlers = new ArrayList<>();
+
+    public void addEventHandler(EventHandler observer) {
+        eventHandlers.add(observer);
+    }
+
+    protected void notifyEventHandlers() {
+        for (var observer : eventHandlers)
+            observer.handle();
     }
 }

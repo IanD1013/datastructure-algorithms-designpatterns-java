@@ -13,7 +13,6 @@ public class BoldCommand implements UndoableCommand {
     @Override
     public void unexecute() {
         document.setContent(prevContent);
-
     }
 
     @Override

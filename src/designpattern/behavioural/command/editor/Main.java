@@ -6,6 +6,7 @@ public class Main {
         var document = new HTMLDocument();
         document.setContent("Hello World");
 
+        // Somewhere in our application, this command object is linked with a button or a menu item
         var boldCommand = new BoldCommand(document, history);
         boldCommand.execute();
         System.out.println(document.getContent());

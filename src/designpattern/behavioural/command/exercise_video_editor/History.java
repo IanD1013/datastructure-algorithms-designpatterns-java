@@ -1,4 +1,4 @@
-package designpattern.behavioural.command.editor;
+package designpattern.behavioural.command.exercise_video_editor;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -7,7 +7,7 @@ public class History {
     private Deque<UndoableCommand> commands = new ArrayDeque<>();
 
     public void push(UndoableCommand command) {
-        commands.add(command);
+        commands.push(command);
     }
 
     public UndoableCommand pop() {
@@ -18,3 +18,4 @@ public class History {
         return commands.size();
     }
 }
+

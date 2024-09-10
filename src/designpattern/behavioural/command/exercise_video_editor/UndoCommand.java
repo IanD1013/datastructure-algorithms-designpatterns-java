@@ -1,4 +1,4 @@
-package designpattern.behavioural.command.editor;
+package designpattern.behavioural.command.exercise_video_editor;
 
 public class UndoCommand implements Command {
     private History history;
@@ -10,6 +10,6 @@ public class UndoCommand implements Command {
     @Override
     public void execute() {
         if (history.size() > 0)
-            history.pop().unexecute();
+            history.pop().undo();
     }
 }

@@ -1,4 +1,4 @@
-package designpattern.structural.singleton.exercise_logger;
+package designpattern.creational.singleton.exercise_logger;
 
 import java.util.HashMap;
 import java.util.Map;

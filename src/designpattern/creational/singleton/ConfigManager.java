@@ -1,4 +1,4 @@
-package designpattern.structural.singleton;
+package designpattern.creational.singleton;
 
 // 1. make the constructor private
 // 2. define a static field

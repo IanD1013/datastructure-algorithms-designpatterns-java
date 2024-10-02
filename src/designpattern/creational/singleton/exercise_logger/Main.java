@@ -1,4 +1,4 @@
-package designpattern.structural.singleton.exercise_logger;
+package designpattern.creational.singleton.exercise_logger;
 
 public class Main {
     public static void main(String[] args) {
